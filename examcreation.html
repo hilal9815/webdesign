@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teacher.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ezTkEr3bLdWqeJczbJ0R7TWHz7T1j5LvqcC4aT+geTlCcAhPjMYYDnSR5dBF8A1x" crossorigin="anonymous">
+    <title>Instructor's Page</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome Instructor</h1>
+        <img src = "profile.png" class="my-account-icon" style="width:80px;height:80px;">
+        
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="examcreation.html">Create Exam</a></li>
+            <li><a href="#">Browse Exams</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="exam-creation-section">
+            <h2>Create Exam</h2>
+            
+            <!-- Exam creation form -->
+            <form id="examForm">
+                <label for="examTitle">Exam Title:</label>
+                <input type="text" id="examTitle" name="examTitle" required>
+
+                <label for="courseSelect">Select Course:</label>
+                <select id="courseSelect" name="courseSelect" required>
+                    <!-- Mock data for courses -->
+                    <option value="math">CSE123</option>
+                    <option value="history">CSE234</option>
+                    <option value="physics">CSE567</option>
+                </select>
+
+                <label for="examDate">Exam Date:</label>
+                <input type="date" id="examDate" name="examDate" required>
+
+                <button type="submit">Create Exam</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
